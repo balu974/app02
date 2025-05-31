@@ -1,0 +1,21 @@
+<html>
+	<form method="post" th:action="@{/book}" th:object = "${bookObj}">
+		<table>
+			<tr>
+				<td> Book Name: </td>
+				<td><input type="text" th:field="*{bookName}"></td>
+			</tr>
+			<tr>
+				<td> Book Price: </td>
+				<td><input type="text" th:field="*{bookPrice}"></td>
+			</tr>
+			<tr>
+				<td> Book Author: </td>
+				<td><input type="text" th:field="*{bookAuthor}"></td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Next"></td>
+			</tr>
+		</table>
+	</form>
+</html>
